@@ -1,0 +1,54 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+a.growing-link {
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+a.growing-link:hover {
+  transform: scale(2, 3);
+  font-weight: 900;
+}
+
+.code-block {
+  background-color: black;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-exit-active {
+  // transform: opacity;
+  transition: opacity 2s ease-in-out;
+}
+
+h1.dramatic {
+  // background-color: #666;
+  font-family: 'Bangers', sans-serif;
+  font-size: 5.5rem;
+  text-shadow: 6px 8px #232323;
+  // stroke-width: 5px;
+}
+
+.jumbotron {
+  background-color: #787878;
+  border-radius: 0.5rem;
+  box-shadow: 6px 6px 10px black;
+  margin-bottom: 2rem;
+  padding: 1.8rem 3rem;
+}
