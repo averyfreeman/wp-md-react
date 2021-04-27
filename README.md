@@ -4,7 +4,7 @@
 
 There are plenty of 'Headless CMS' static and dynamic site generators out there already, but I thought this would be a fun project to start from scratch as an educational exercise to learn the concepts involved.
 
-At this time, none of these features has been fully implemented.
+At this time, none of these features have been fully implemented.
 
 ### Feature goals:
 
