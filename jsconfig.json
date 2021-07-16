@@ -1,6 +1,27 @@
 {
   "compilerOptions": {
-    "baseUrl": "src"
+    "checkJs": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "target": "es2020",
+    "module": "es2015",
+    "baseUrl": "./src",
+    "paths": {
+      "articles/*": ["./articles/*"],
+      "Components/*": ["./Components/*"],
+      "content/*": ["./content/*"],
+      "fonts/*": ["./fonts/*"],
+      "global/*": ["./global/*"],
+      "lib/*": ["./lib/*"],
+      "navigation/*": ["./navigation/*"],
+      "Pages/*": ["./Pages/*"],
+      "styles/*": ["./styles/*"],
+      "vectors/*": ["./vectors/*"]
+    }
   },
-  "include": ["src"]
+  "exclude": ["dist", "node_modules", "build", ".vscode", "coverage", ".npm", ".yarn"],
+  "typeAcquisition": {
+    "enable": true,
+    "include": ["react", "react-dom", "jest", "testing-library__jest-dom"]
+  }
 }

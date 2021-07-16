@@ -1,0 +1,15 @@
+.cursor i {
+  animation: fade 2s ease-out;
+  animation-iteration-count: infinite;
+  display: block;
+  opacity: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

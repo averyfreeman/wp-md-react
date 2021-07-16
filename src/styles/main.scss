@@ -1,6 +1,13 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+body {
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 a.growing-link {
   text-decoration: none;
   transition: 0.5s ease-in-out;
@@ -11,8 +18,54 @@ a.growing-link:hover {
   font-weight: 900;
 }
 
+.card-content {
+  background-color: $blue-800;
+  box-shadow: 4px 4px 6px black;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  a {
+    color: #999;
+    text-decoration: none;
+  }
+}
+
+.card-content:hover {
+  border-radius: 5px;
+  opacity: 0.5;
+  transform: scale(1.02);
+}
+
+.card-container {
+  width: 90vw;
+  z-index: 2;
+}
+
+.card-head {
+  background-color: $blue-900;
+  box-shadow: 4px 4px 6px black;
+}
+
+.center-column {
+  direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .code-block {
   background-color: black;
+}
+
+tr {
+  background-color: #282c34;
+}
+
+section {
+  z-index: 2;
+}
+
+img.constrain-image {
+  max-width: 60%;
 }
 
 .fade-enter {
@@ -33,22 +86,45 @@ a.growing-link:hover {
 
 .fade-enter-active,
 .fade-exit-active {
-  // transform: opacity;
   transition: opacity 2s ease-in-out;
 }
 
+img.block-margin {
+  display: block;
+  margin: 2rem;
+}
+
 h1.dramatic {
-  // background-color: #666;
   font-family: 'Bangers', sans-serif;
-  font-size: 5.5rem;
+  font-size: calc(4em + 2vmin);
   text-shadow: 6px 8px #232323;
-  // stroke-width: 5px;
+  -moz-stroke-width: 5px;
+  -webkit-text-stroke: thin;
+  -webkit-text-stroke-color: black;
+}
+
+h3.dramatic {
+  font-family: 'Bangers', sans-serif;
+  font-size: calc(2em + 2vmin);
+  text-shadow: 6px 8px #232323;
+  -moz-stroke-width: 5px;
+  -webkit-text-stroke: thin;
+  -webkit-text-stroke-color: black;
 }
 
 .jumbotron {
   background-color: #787878;
   border-radius: 0.5rem;
   box-shadow: 6px 6px 10px black;
-  margin-bottom: 2rem;
   padding: 1.8rem 3rem;
+  width: 90vw;
+  z-index: 2;
+}
+
+.round-most {
+  border-radius: 20px;
+}
+
+.round-more {
+  border-radius: 10px;
 }
